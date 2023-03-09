@@ -132,6 +132,8 @@ The following configuration options are available:
   create a `theme/fonts/fonts.css` file and store the fonts in the `theme/fonts/` directory.
 - **google-analytics:** This field has been deprecated and will be removed in a future release.
   Use the `theme/head.hbs` file to add the appropriate Google Analytics code instead.
+- **comments-script:** Adds the comments scripts at the bottom of each book page. Use this to add
+  `giscus` or `utterances` comments. 
 - **additional-css:** If you need to slightly change the appearance of your book
   without overwriting the whole style, you can specify a set of stylesheets that
   will be loaded after the default ones where you can surgically change the

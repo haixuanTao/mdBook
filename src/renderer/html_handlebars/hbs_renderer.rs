@@ -677,6 +677,11 @@ fn make_data(
         data.insert("google_analytics".to_owned(), json!(ga));
     }
 
+    // Add comments script
+    if let Some(ref ga) = html_config.comments_script {
+        data.insert("comments_script".to_owned(), json!(ga));
+    }
+
     if html_config.mathjax_support {
         data.insert("mathjax_support".to_owned(), json!(true));
     }
